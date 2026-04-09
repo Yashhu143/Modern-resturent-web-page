@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Savoria</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-utensils me-2"></i>Savoria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Our Menu</h1>
+            <p class="lead">Discover our culinary creations crafted with love and passion.</p>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5">
+                <button class="btn btn-primary filter-btn active mx-1 mb-2" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-btn mx-1 mb-2" data-filter="starters">Starters</button>
+                <button class="btn btn-outline-primary filter-btn mx-1 mb-2" data-filter="mains">Main Course</button>
+                <button class="btn btn-outline-primary filter-btn mx-1 mb-2" data-filter="desserts">Desserts</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="row g-4" id="menuGrid">
+                <!-- Starter 1 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="starters">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Bruschetta">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomato Bruschetta <span class="float-end text-primary">$8.99</span>
+                            </h5>
+                            <p class="card-text text-muted small">Grilled bread rubbed with garlic and topped with olive
+                                oil, salt, and tomatoes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Starter 2 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="starters">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Calamari">
+                        <div class="card-body">
+                            <h5 class="card-title">Crispy Calamari <span class="float-end text-primary">$11.99</span>
+                            </h5>
+                            <p class="card-text text-muted small">Tender rings of calamari, lightly breaded and fried
+                                golden, served with marinara.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main 1 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1544025162-811c7508ca6d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Steak">
+                        <div class="card-body">
+                            <h5 class="card-title">Ribeye Filet <span class="float-end text-primary">$34.99</span></h5>
+                            <p class="card-text text-muted small">Premium cut 12oz ribeye, beautifully marbled, grilled
+                                to perfection.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main 2 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Salmon">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Salmon <span class="float-end text-primary">$22.99</span>
+                            </h5>
+                            <p class="card-text text-muted small">Fresh atlantic salmon served with asparagus and
+                                lemon-butter sauce.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main 3 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Margherita <span class="float-end text-primary">$14.99</span>
+                            </h5>
+                            <p class="card-text text-muted small">Wood-fired pizza topped with fresh basil, mozzarella,
+                                and tomato base.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dessert 1 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Cheesecake">
+                        <div class="card-body">
+                            <h5 class="card-title">Berry Cheesecake <span class="float-end text-primary">$7.99</span>
+                            </h5>
+                            <p class="card-text text-muted small">New York style cheesecake topped with fresh strawberry
+                                compote.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dessert 2 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e440c9a590d6?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Tiramisu">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Tiramisu <span class="float-end text-primary">$8.50</span>
+                            </h5>
+                            <p class="card-text text-muted small">Italian dessert layered with mascarpone, espresso
+                                soaked ladyfingers and cocoa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5><i class="fa-solid fa-utensils me-2"></i>Savoria</h5>
+                    <p class="text-muted pe-4">Providing culinary excellence since 1998. Join us for a memorable dining
+                        experience featuring fresh, local ingredients.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="mb-2 d-block">Home</a></li>
+                        <li><a href="menu.html" class="mb-2 d-block">Menu</a></li>
+                        <li><a href="contact.html" class="mb-2 d-block">Contact Us</a></li>
+                        <li><a href="#" class="mb-2 d-block">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Opening Hours</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><strong>Mon-Fri:</strong> 10:00 AM - 10:00 PM</li>
+                        <li class="mb-2"><strong>Sat-Sun:</strong> 9:00 AM - 11:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top mt-4 pt-3 text-center text-muted">
+                <small>&copy; 2026 Savoria Restaurant. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
